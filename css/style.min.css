@@ -73,11 +73,29 @@ a:hover {
   border-radius: 8px;
   box-shadow: 0 2px 10px var(--shadow);
   transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  position: relative;
 }
 
 .service-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 20px var(--shadow-lg);
+}
+
+.service-cta {
+  display: inline-block;
+  margin-top: 15px;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+.service-card:hover .service-cta {
+  color: var(--primary-hover);
+  text-decoration: underline;
 }
 
 .service-card svg {
