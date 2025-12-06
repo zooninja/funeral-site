@@ -1,0 +1,15 @@
+{
+  "name": "funeral-site",
+  "version": "1.0.0",
+  "description": "Production-ready funeral services website",
+  "scripts": {
+    "dev": "wrangler pages dev .",
+    "deploy": "git push origin main"
+  },
+  "keywords": ["funeral", "cloudflare-pages", "static-site"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
