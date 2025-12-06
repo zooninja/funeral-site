@@ -50,7 +50,7 @@
       <div class="gallery-grid">
 
         <!-- Ковчези -->
-        <div class="gallery-card">
+        <div class="gallery-card" onclick="toggleGallery('kovchezi')">
           <div class="card-icon">
             <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="15" y="30" width="50" height="35" rx="2" stroke="#c8a882" stroke-width="2" fill="none"/>
@@ -61,10 +61,43 @@
           </div>
           <h3>Ковчези</h3>
           <p>Широк избор от ковчези в различни стилове и материали</p>
+          <span class="expand-icon">▼</span>
+        </div>
+        <div class="sub-gallery" id="kovchezi-gallery">
+          <div class="image-grid">
+            <div class="image-placeholder">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="5" y="15" width="50" height="30" rx="2" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <path d="M10 15 L10 10 L50 10 L50 15" stroke="#c8a882" stroke-width="2"/>
+              </svg>
+              <p>Ковчег 1</p>
+            </div>
+            <div class="image-placeholder">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="5" y="15" width="50" height="30" rx="2" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <path d="M10 15 L10 10 L50 10 L50 15" stroke="#c8a882" stroke-width="2"/>
+              </svg>
+              <p>Ковчег 2</p>
+            </div>
+            <div class="image-placeholder">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="5" y="15" width="50" height="30" rx="2" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <path d="M10 15 L10 10 L50 10 L50 15" stroke="#c8a882" stroke-width="2"/>
+              </svg>
+              <p>Ковчег 3</p>
+            </div>
+            <div class="image-placeholder">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="5" y="15" width="50" height="30" rx="2" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <path d="M10 15 L10 10 L50 10 L50 15" stroke="#c8a882" stroke-width="2"/>
+              </svg>
+              <p>Ковчег 4</p>
+            </div>
+          </div>
         </div>
 
         <!-- Урни -->
-        <div class="gallery-card">
+        <div class="gallery-card" onclick="toggleGallery('urni')">
           <div class="card-icon">
             <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M30 25 L30 20 L50 20 L50 25" stroke="#c8a882" stroke-width="2" fill="none"/>
@@ -74,10 +107,43 @@
           </div>
           <h3>Урни</h3>
           <p>Елегантни урни за кремация от различни материали</p>
+          <span class="expand-icon">▼</span>
+        </div>
+        <div class="sub-gallery" id="urni-gallery">
+          <div class="image-grid">
+            <div class="image-placeholder">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 15 L20 10 L40 10 L40 15" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <path d="M18 15 L22 45 L38 45 L42 15 Z" stroke="#c8a882" stroke-width="2" fill="none"/>
+              </svg>
+              <p>Урна 1</p>
+            </div>
+            <div class="image-placeholder">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 15 L20 10 L40 10 L40 15" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <path d="M18 15 L22 45 L38 45 L42 15 Z" stroke="#c8a882" stroke-width="2" fill="none"/>
+              </svg>
+              <p>Урна 2</p>
+            </div>
+            <div class="image-placeholder">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 15 L20 10 L40 10 L40 15" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <path d="M18 15 L22 45 L38 45 L42 15 Z" stroke="#c8a882" stroke-width="2" fill="none"/>
+              </svg>
+              <p>Урна 3</p>
+            </div>
+            <div class="image-placeholder">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 15 L20 10 L40 10 L40 15" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <path d="M18 15 L22 45 L38 45 L42 15 Z" stroke="#c8a882" stroke-width="2" fill="none"/>
+              </svg>
+              <p>Урна 4</p>
+            </div>
+          </div>
         </div>
 
         <!-- Венци -->
-        <div class="gallery-card">
+        <div class="gallery-card" onclick="toggleGallery('ventsi')">
           <div class="card-icon">
             <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="40" cy="40" r="20" stroke="#c8a882" stroke-width="2" fill="none"/>
@@ -93,10 +159,71 @@
           </div>
           <h3>Венци</h3>
           <p>Траурни венци и аранжименти от свежи цветя</p>
+          <span class="expand-icon">▼</span>
+        </div>
+        <div class="sub-gallery" id="ventsi-gallery">
+          <div class="image-grid">
+            <div class="image-placeholder">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="30" cy="30" r="15" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <circle cx="30" cy="18" r="2" fill="#c8a882"/>
+                <circle cx="39" cy="21" r="2" fill="#c8a882"/>
+                <circle cx="42" cy="30" r="2" fill="#c8a882"/>
+                <circle cx="39" cy="39" r="2" fill="#c8a882"/>
+                <circle cx="30" cy="42" r="2" fill="#c8a882"/>
+                <circle cx="21" cy="39" r="2" fill="#c8a882"/>
+                <circle cx="18" cy="30" r="2" fill="#c8a882"/>
+                <circle cx="21" cy="21" r="2" fill="#c8a882"/>
+              </svg>
+              <p>Венец 1</p>
+            </div>
+            <div class="image-placeholder">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="30" cy="30" r="15" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <circle cx="30" cy="18" r="2" fill="#c8a882"/>
+                <circle cx="39" cy="21" r="2" fill="#c8a882"/>
+                <circle cx="42" cy="30" r="2" fill="#c8a882"/>
+                <circle cx="39" cy="39" r="2" fill="#c8a882"/>
+                <circle cx="30" cy="42" r="2" fill="#c8a882"/>
+                <circle cx="21" cy="39" r="2" fill="#c8a882"/>
+                <circle cx="18" cy="30" r="2" fill="#c8a882"/>
+                <circle cx="21" cy="21" r="2" fill="#c8a882"/>
+              </svg>
+              <p>Венец 2</p>
+            </div>
+            <div class="image-placeholder">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="30" cy="30" r="15" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <circle cx="30" cy="18" r="2" fill="#c8a882"/>
+                <circle cx="39" cy="21" r="2" fill="#c8a882"/>
+                <circle cx="42" cy="30" r="2" fill="#c8a882"/>
+                <circle cx="39" cy="39" r="2" fill="#c8a882"/>
+                <circle cx="30" cy="42" r="2" fill="#c8a882"/>
+                <circle cx="21" cy="39" r="2" fill="#c8a882"/>
+                <circle cx="18" cy="30" r="2" fill="#c8a882"/>
+                <circle cx="21" cy="21" r="2" fill="#c8a882"/>
+              </svg>
+              <p>Венец 3</p>
+            </div>
+            <div class="image-placeholder">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="30" cy="30" r="15" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <circle cx="30" cy="18" r="2" fill="#c8a882"/>
+                <circle cx="39" cy="21" r="2" fill="#c8a882"/>
+                <circle cx="42" cy="30" r="2" fill="#c8a882"/>
+                <circle cx="39" cy="39" r="2" fill="#c8a882"/>
+                <circle cx="30" cy="42" r="2" fill="#c8a882"/>
+                <circle cx="21" cy="39" r="2" fill="#c8a882"/>
+                <circle cx="18" cy="30" r="2" fill="#c8a882"/>
+                <circle cx="21" cy="21" r="2" fill="#c8a882"/>
+              </svg>
+              <p>Венец 4</p>
+            </div>
+          </div>
         </div>
 
         <!-- Пиафлори -->
-        <div class="gallery-card">
+        <div class="gallery-card" onclick="toggleGallery('piaflori')">
           <div class="card-icon">
             <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="25" y="25" width="30" height="35" rx="2" stroke="#c8a882" stroke-width="2" fill="none"/>
@@ -106,10 +233,43 @@
           </div>
           <h3>Пиафлори</h3>
           <p>Портретни цветни композиции</p>
+          <span class="expand-icon">▼</span>
+        </div>
+        <div class="sub-gallery" id="piaflori-gallery">
+          <div class="image-grid">
+            <div class="image-placeholder">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="15" y="15" width="30" height="35" rx="2" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <circle cx="30" cy="28" r="4" fill="#c8a882"/>
+              </svg>
+              <p>Пиафлор 1</p>
+            </div>
+            <div class="image-placeholder">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="15" y="15" width="30" height="35" rx="2" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <circle cx="30" cy="28" r="4" fill="#c8a882"/>
+              </svg>
+              <p>Пиафлор 2</p>
+            </div>
+            <div class="image-placeholder">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="15" y="15" width="30" height="35" rx="2" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <circle cx="30" cy="28" r="4" fill="#c8a882"/>
+              </svg>
+              <p>Пиафлор 3</p>
+            </div>
+            <div class="image-placeholder">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="15" y="15" width="30" height="35" rx="2" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <circle cx="30" cy="28" r="4" fill="#c8a882"/>
+              </svg>
+              <p>Пиафлор 4</p>
+            </div>
+          </div>
         </div>
 
         <!-- Драперии -->
-        <div class="gallery-card">
+        <div class="gallery-card" onclick="toggleGallery('draperii')">
           <div class="card-icon">
             <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
               <line x1="20" y1="20" x2="60" y2="20" stroke="#c8a882" stroke-width="2"/>
@@ -121,10 +281,55 @@
           </div>
           <h3>Драперии</h3>
           <p>Траурни драперии и покривала</p>
+          <span class="expand-icon">▼</span>
+        </div>
+        <div class="sub-gallery" id="draperii-gallery">
+          <div class="image-grid">
+            <div class="image-placeholder">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="10" y1="10" x2="50" y2="10" stroke="#c8a882" stroke-width="2"/>
+                <path d="M15 10 Q15 25 15 40" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <path d="M25 10 Q25 25 25 40" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <path d="M35 10 Q35 25 35 40" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <path d="M45 10 Q45 25 45 40" stroke="#c8a882" stroke-width="2" fill="none"/>
+              </svg>
+              <p>Драперия 1</p>
+            </div>
+            <div class="image-placeholder">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="10" y1="10" x2="50" y2="10" stroke="#c8a882" stroke-width="2"/>
+                <path d="M15 10 Q15 25 15 40" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <path d="M25 10 Q25 25 25 40" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <path d="M35 10 Q35 25 35 40" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <path d="M45 10 Q45 25 45 40" stroke="#c8a882" stroke-width="2" fill="none"/>
+              </svg>
+              <p>Драперия 2</p>
+            </div>
+            <div class="image-placeholder">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="10" y1="10" x2="50" y2="10" stroke="#c8a882" stroke-width="2"/>
+                <path d="M15 10 Q15 25 15 40" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <path d="M25 10 Q25 25 25 40" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <path d="M35 10 Q35 25 35 40" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <path d="M45 10 Q45 25 45 40" stroke="#c8a882" stroke-width="2" fill="none"/>
+              </svg>
+              <p>Драперия 3</p>
+            </div>
+            <div class="image-placeholder">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="10" y1="10" x2="50" y2="10" stroke="#c8a882" stroke-width="2"/>
+                <path d="M15 10 Q15 25 15 40" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <path d="M25 10 Q25 25 25 40" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <path d="M35 10 Q35 25 35 40" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <path d="M45 10 Q45 25 45 40" stroke="#c8a882" stroke-width="2" fill="none"/>
+              </svg>
+              <p>Драперия 4</p>
+            </div>
+          </div>
         </div>
 
         <!-- Паметници -->
-        <div class="gallery-card">
+        <div class="gallery-card" onclick="toggleGallery('pametnitsi')">
           <div class="card-icon">
             <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="30" y="25" width="20" height="30" rx="1" stroke="#c8a882" stroke-width="2" fill="none"/>
@@ -135,10 +340,43 @@
           </div>
           <h3>Паметници</h3>
           <p>Гранитни и мраморни паметници</p>
+          <span class="expand-icon">▼</span>
+        </div>
+        <div class="sub-gallery" id="pametnitsi-gallery">
+          <div class="image-grid">
+            <div class="image-placeholder">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="20" y="15" width="20" height="30" rx="1" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <rect x="15" y="45" width="30" height="5" fill="#c8a882"/>
+              </svg>
+              <p>Паметник 1</p>
+            </div>
+            <div class="image-placeholder">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="20" y="15" width="20" height="30" rx="1" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <rect x="15" y="45" width="30" height="5" fill="#c8a882"/>
+              </svg>
+              <p>Паметник 2</p>
+            </div>
+            <div class="image-placeholder">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="20" y="15" width="20" height="30" rx="1" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <rect x="15" y="45" width="30" height="5" fill="#c8a882"/>
+              </svg>
+              <p>Паметник 3</p>
+            </div>
+            <div class="image-placeholder">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="20" y="15" width="20" height="30" rx="1" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <rect x="15" y="45" width="30" height="5" fill="#c8a882"/>
+              </svg>
+              <p>Паметник 4</p>
+            </div>
+          </div>
         </div>
 
         <!-- Некролози -->
-        <div class="gallery-card">
+        <div class="gallery-card" onclick="toggleGallery('nekrolozi')">
           <div class="card-icon">
             <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="25" y="20" width="30" height="40" rx="2" stroke="#c8a882" stroke-width="2" fill="none"/>
@@ -150,10 +388,47 @@
           </div>
           <h3>Некролози</h3>
           <p>Печат на некролози и покани</p>
+          <span class="expand-icon">▼</span>
+        </div>
+        <div class="sub-gallery" id="nekrolozi-gallery">
+          <div class="image-grid">
+            <div class="image-placeholder">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="15" y="10" width="30" height="40" rx="2" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <line x1="20" y1="20" x2="40" y2="20" stroke="#c8a882" stroke-width="1"/>
+                <line x1="20" y1="26" x2="40" y2="26" stroke="#c8a882" stroke-width="1"/>
+              </svg>
+              <p>Некролог 1</p>
+            </div>
+            <div class="image-placeholder">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="15" y="10" width="30" height="40" rx="2" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <line x1="20" y1="20" x2="40" y2="20" stroke="#c8a882" stroke-width="1"/>
+                <line x1="20" y1="26" x2="40" y2="26" stroke="#c8a882" stroke-width="1"/>
+              </svg>
+              <p>Некролог 2</p>
+            </div>
+            <div class="image-placeholder">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="15" y="10" width="30" height="40" rx="2" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <line x1="20" y1="20" x2="40" y2="20" stroke="#c8a882" stroke-width="1"/>
+                <line x1="20" y1="26" x2="40" y2="26" stroke="#c8a882" stroke-width="1"/>
+              </svg>
+              <p>Некролог 3</p>
+            </div>
+            <div class="image-placeholder">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="15" y="10" width="30" height="40" rx="2" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <line x1="20" y1="20" x2="40" y2="20" stroke="#c8a882" stroke-width="1"/>
+                <line x1="20" y1="26" x2="40" y2="26" stroke="#c8a882" stroke-width="1"/>
+              </svg>
+              <p>Некролог 4</p>
+            </div>
+          </div>
         </div>
 
         <!-- Портрети -->
-        <div class="gallery-card">
+        <div class="gallery-card" onclick="toggleGallery('portreti')">
           <div class="card-icon">
             <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="25" y="25" width="30" height="30" rx="2" stroke="#c8a882" stroke-width="2" fill="none"/>
@@ -163,6 +438,39 @@
           </div>
           <h3>Порцеланови Портрети</h3>
           <p>Траурни порцеланови портрети с висока траиност</p>
+          <span class="expand-icon">▼</span>
+        </div>
+        <div class="sub-gallery" id="portreti-gallery">
+          <div class="image-grid">
+            <div class="image-placeholder">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="15" y="15" width="30" height="30" rx="2" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <circle cx="30" cy="28" r="5" stroke="#c8a882" stroke-width="2" fill="none"/>
+              </svg>
+              <p>Портрет 1</p>
+            </div>
+            <div class="image-placeholder">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="15" y="15" width="30" height="30" rx="2" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <circle cx="30" cy="28" r="5" stroke="#c8a882" stroke-width="2" fill="none"/>
+              </svg>
+              <p>Портрет 2</p>
+            </div>
+            <div class="image-placeholder">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="15" y="15" width="30" height="30" rx="2" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <circle cx="30" cy="28" r="5" stroke="#c8a882" stroke-width="2" fill="none"/>
+              </svg>
+              <p>Портрет 3</p>
+            </div>
+            <div class="image-placeholder">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="15" y="15" width="30" height="30" rx="2" stroke="#c8a882" stroke-width="2" fill="none"/>
+                <circle cx="30" cy="28" r="5" stroke="#c8a882" stroke-width="2" fill="none"/>
+              </svg>
+              <p>Портрет 4</p>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -198,5 +506,32 @@
       </p>
     </div>
   </footer>
+
+  <!-- Gallery Toggle Script -->
+  <script>
+    function toggleGallery(category) {
+      const gallery = document.getElementById(category + '-gallery');
+      const cards = document.querySelectorAll('.gallery-card');
+      const card = event.currentTarget;
+
+      // Close all other galleries
+      document.querySelectorAll('.sub-gallery').forEach(g => {
+        if (g !== gallery) {
+          g.classList.remove('active');
+        }
+      });
+
+      // Remove active state from all cards
+      cards.forEach(c => {
+        if (c !== card) {
+          c.classList.remove('active');
+        }
+      });
+
+      // Toggle current gallery
+      gallery.classList.toggle('active');
+      card.classList.toggle('active');
+    }
+  </script>
 </body>
 </html>

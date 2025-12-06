@@ -16,6 +16,48 @@ img/
 └── portreti/          # Снимки на порцеланови портрети
 ```
 
+## Как да добавите реални изображения
+
+Всяка категория в галерията вече има подгалерия с 4 placeholder изображения. За да ги замените с реални снимки:
+
+1. **Намерете секцията с placeholder в index.html** - например за ковчези:
+```html
+<div class="image-placeholder">
+  <svg>...</svg>
+  <p>Ковчег 1</p>
+</div>
+```
+
+2. **Заменете с реално изображение**:
+```html
+<div class="image-item">
+  <img src="img/kovchezi/kovcheg-1.webp" alt="Ковчег 1" loading="lazy">
+  <p>Ковчег 1</p>
+</div>
+```
+
+3. **Добавете CSS стил за image-item** (ако го няма вече):
+```css
+.image-item {
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.image-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.image-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+```
+
 ## Изисквания за изображенията
 
 - **Формат:** WebP (препоръчително) или JPG
