@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Професионални погребални услуги в София. Денонощна помощ, транспорт, кремация. Коректност и уважение.">
+  <meta name="description" content="Погребална агенция Синева - Професионални погребални услуги в Своге и София. Денонощна помощ, транспорт, кремация. Коректност и уважение.">
   <meta name="theme-color" content="#1a1a1a">
   <meta name="robots" content="index, follow">
   
@@ -14,7 +14,7 @@
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
     body{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.6;color:#333;background:#fff}
-    .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('img/hero.webp') center/cover;color:#fff;text-align:center;padding:20px}
+    .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,rgba(15,30,45,0.85),rgba(26,26,26,0.9)),url('img/hero.webp') center/cover,url('img/hero.jpg') center/cover,url('img/hero.png') center/cover,linear-gradient(to bottom,#1a2332,#0f1419);color:#fff;text-align:center;padding:20px}
     .hero h1{font-size:clamp(2rem,5vw,4rem);margin-bottom:1rem;font-weight:700}
     .hero p{font-size:clamp(1rem,2vw,1.5rem);margin-bottom:2rem}
     .cta{display:inline-block;margin-top:2rem;padding:1rem 2rem;background:#c8a882;color:#fff;text-decoration:none;border-radius:4px;font-weight:600;transition:all .3s;font-size:1.1rem}
@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="css/style.min.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="css/style.min.css"></noscript>
   
-  <title>Погребална Агенция София - Денонощни Услуги 24/7</title>
+  <title>Погребална Агенция Синева - Денонощни Услуги 24/7 | Своге и София</title>
   <link rel="canonical" href="https://yourdomain.bg">
   
   <!-- Favicon -->
@@ -36,29 +36,36 @@
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Погребална Агенция София",
+    "name": "Погребална Агенция Синева",
     "image": "https://yourdomain.bg/img/logo.webp",
     "telephone": "+359888123456",
     "email": "contact@yourdomain.bg",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "ул. Примерна 123",
-      "addressLocality": "София",
-      "postalCode": "1000",
+      "streetAddress": "Своге",
+      "addressLocality": "Своге",
+      "addressRegion": "София област",
+      "postalCode": "2260",
       "addressCountry": "BG"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 42.6977,
-      "longitude": 23.3219
+      "latitude": 42.9648201,
+      "longitude": 23.3446299
     },
     "url": "https://yourdomain.bg",
     "openingHours": "Mo-Su 00:00-23:59",
     "priceRange": "$$",
-    "areaServed": {
-      "@type": "City",
-      "name": "София"
-    }
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Своге"
+      },
+      {
+        "@type": "City",
+        "name": "София"
+      }
+    ]
   }
   </script>
 </head>
@@ -173,26 +180,47 @@
           </div>
           <div class="info-item">
             <strong>📍 Адрес:</strong>
-            <span>гр. София, ул. Примерна 123</span>
+            <span>гр. Своге, обл. София</span>
+          </div>
+          <div class="info-item">
+            <strong>🏙️ Обслужваме:</strong>
+            <span>Своге и София</span>
           </div>
           <div class="info-item">
             <strong>🕐 Работно време:</strong>
             <span>Денонощно 24/7</span>
           </div>
         </div>
-        
+
         <form id="contactForm" class="contact-form">
           <input type="text" name="name" placeholder="Вашето име *" required maxlength="100" autocomplete="name">
           <input type="tel" name="phone" placeholder="Телефон *" required pattern="[0-9]{10,15}" maxlength="15" autocomplete="tel">
           <input type="email" name="email" placeholder="Email (по избор)" maxlength="100" autocomplete="email">
           <textarea name="message" placeholder="Съобщение" rows="5" maxlength="500"></textarea>
-          
+
           <!-- Cloudflare Turnstile -->
           <div class="cf-turnstile" data-sitekey="1x00000000000000000000AA"></div>
-          
+
           <button type="submit" class="btn-submit">Изпрати запитване</button>
           <p class="form-status" role="status" aria-live="polite"></p>
         </form>
+      </div>
+
+      <!-- Google Maps -->
+      <div class="map-container">
+        <h3>Нашата локация</h3>
+        <div class="map-wrapper">
+          <iframe
+            src="https://maps.google.com/maps?q=42.9648201,23.3446299&hl=bg&z=15&output=embed"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Локация на Погребална Агенция Синева">
+          </iframe>
+        </div>
       </div>
     </div>
   </section>
@@ -200,9 +228,9 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2024 Погребална Агенция София. Всички права запазени.</p>
+      <p>&copy; 2024 Погребална Агенция Синева. Всички права запазени.</p>
       <p class="footer-links">
-        <a href="#privacy">Политика за поверителност</a> | 
+        <a href="#privacy">Политика за поверителност</a> |
         <a href="#terms">Общи условия</a>
       </p>
     </div>
